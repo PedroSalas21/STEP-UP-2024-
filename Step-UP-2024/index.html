@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step UP</title>
+    <link rel="icon" href="img/auto-crescimento.png" alt="Fundo azul e roxo com o logo em destaque">
+    <link rel="stylesheet" href="SUP24.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="mobile.css">
+    <link rel="stylesheet" href="https://unpkg.com/ionicons@5.5.0/dist/css/ionicons.min.css">
+    <link rel="stylesheet" href="carousel.css">
+    <script src="carousell.js" defer></script>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <h1 class="logo">Step UP</h1>
+            <ul id="menu">
+                <li><a href="#showcase">Inicio</a></li>
+                <li><a href="#clientes">Sobre</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#faleConosco">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header id="showcase">
+        <div id="showcase-container">
+            <h2>Sempre mais alto!</h2>
+            <p>"Na vanguarda da inovação, nossa tecnologia é a estrada que leva você ao sucesso."</p>
+            <a href="#products" class="btn">Saiba mais</a>
+        </div>
+    </header>
+
+    <section id="clientes">
+        <div id="headline">Clientes Step UP</div>
+        <div class="clientes-container">
+            <img src="img/apple logo.png" class="Cliente" alt="Logo empresa Apple">
+            <img src="img/netflix logo.png" class="Cliente" alt="Logo empresa Netflix">
+            <img src="img/xbox logo.png" class="Cliente" alt="Logo console Xbox">
+            <img src="img/ubisoft logo.png" class="Cliente" alt="Logo empresa Ubisoft">
+        </div>
+    </section>
+
+    <section id="faleConosco">
+        <div id="headline">Fale Conosco!</div>
+        <div class="container-form">
+            <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d913.9128608819976!2d-46.68171972433395!3d-23.616830366468193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50bca9154de7%3A0x9c135f2c860bd99a!2sAv.%20Santo%20Amaro%2C%203755%20-%20Brooklin%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004555-002!5e0!3m2!1spt-BR!2sbr!4v1697933463094!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form id="fale-conosco" action="https://formspree.io/f/xrgwjbvy" method="POST" autocomplete="off" >
+                <h3>Entre em Contato</h3>
+                <p class="frase-intro">Deixe seu contato e nossa equipe entrará em contato o mais breve possível!</p>
+                <div class="inputform">
+                    <span>
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" name="nome" placeholder="Nome">
+                    </span>
+                </div>
+                <div class="inputform">
+                    <span>
+                        <ion-icon name="newspaper-outline"></ion-icon>
+                        <input type="email" name="email" placeholder="Email">
+                    </span>
+                </div>
+                <div class="inputform">
+                    <span>
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="number" name="telefone" placeholder="Telefone">
+                    </span>
+                </div> 
+                <button>Enviar</button>
+            </form>
+        </div>
+    </section>
+     <!-- JavaScript para limpar o formulário -->
+     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var formulario = document.getElementById('"fale-conosco"');
+    
+            formulario.addEventListener('submit', function (event) {
+                formulario.reset();
+                event.preventDefault(); // Impede o envio padrão do formulário
+            });
+        });
+        </script>
+
+    <section id="features">
+        <div id="headline">Como trabalhamos na Step UP?</div>
+        <div id="features-container">
+            <div class="feature">
+                <i class="fa-solid fa-box-archive fa-2x"></i>
+                <span class="feature-title"></span>
+                <p>Nossos especialistas em banco de dados guardam tudo em seu devido lugar!</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code fa-2x"></i>
+                <span class="feature-title"></span>
+                <p>Desenvolvemos seu projeto, um byte de cada vez.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-layer-group fa-2x"></i>
+                <span class="feature-title"></span>
+                <p>Em cada camada de inovação, moldamos o amanhã com tecnologia.</p>
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div id="headline">Produtos</div>
+        <div id="product-container">
+            <img src="img/iphone step molde.png" alt="Imagem de um IPhone" class="IPhone com logo Step UP">
+            <div id="items">
+                <div class="item">
+                <i class="fa-solid fa-box-archive fa-1x"></i>                
+                <p>Utilizamos os melhores softwares de banco de dados.</p>
+                </div>
+                <div class="item">
+                <i class="fa-solid fa-file-lines fa-1x"></i>
+                <p>Documentamos e listamos todos os processos feitos para que esteja a par de todo seu serviço escolhido.</p>
+                </div>
+                <div class="item">
+                <i class="fa-solid fa-network-wired fa-1x"></i>
+                <p>Documentamos e listamos todos os processos feitos para que esteja a par de todo seu serviço escolhido.</p>
+                </div>
+                <div class="item">
+                <i class="fa-regular fa-folder fa-1x"></i>
+                <p>Contamos com uma quipe que vai deixar o seu projeto moderno, robusto, amigavel utlizando as técnicas UI/UX (design) e as últimas tecnologias em linguagens de programação e frameworks..</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="testimonials">
+        <div id="headline">O que acham de nós?</div>
+        <div id="testimonials-container">
+            <div class="testimonial">
+                <img src="img/person-1.jpeg" alt="Foto de uma pessoa ao fundo branco" class="testimonial-image">
+                <p>"Uma empresa de cunho altamente profissional, solicitei o orçamento e foram além das minhas expectativas."</p>
+            </div>
+            <div class="testimonial">
+                <img src="img/person-2.jpeg" alt="Foto de uma pessoa sorrindo" class="testimonial-image">
+                <p>"Excelentes profissionais deste o primeiro contato até a entrega do meu software foram super simpaticos, deram suporte em todo momento, estavam dispostos a sanear tudo e qualquer duvida . nota 10"</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="gallery">
+        <div id="headline">Galeria</div>
+        <div id="gallery-container">
+            <img src="img/image 1.jpeg" alt="Mesa com fios" class="gallery-image">
+            <img src="img/image 2.jpeg" alt="Pessoa em reunião" class="gallery-image">
+            <img src="img/image 3.jpeg" alt="Notebook com códigos" class="gallery-image">
+            <img src="img/image 4.jpeg" alt="Notebook sob a mesa" class="gallery-image">
+            <img src="img/image 5.jpeg" alt="Códigos de programação" class="gallery-image">
+            <img src="img/image 6.jpeg" alt="Pessoa ao computador" class="gallery-image">
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright 2023 - All rights reserved by Step UP.</p>
+        <P>Designed by Step Up.</P>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/8357fca37f.js" crossorigin="anonymous"></script>
+</body>
+</html>
